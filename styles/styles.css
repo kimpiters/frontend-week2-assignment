@@ -30,10 +30,42 @@ Table of Contents:
     padding: 0;
 }
 
-body, button, input {
+body {
     color: #1C2B32;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
+}
+
+button, input {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 20px;
+    border: 2px solid #1C2B32;
+}
+
+button {
+    background-color: #1C2B32;
+    color: #FFF;
+}
+
+input {
+    background-color: transparent;
+    color: #1C2B32;
+    outline: none;
+}
+
+input::placeholder {
+    color: #1C2B32;
+}
+
+a {
+    color: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -46,7 +78,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 90px;
 }
 
 h2 {
@@ -55,8 +87,8 @@ h2 {
 }
 
 h3 {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /*////////////////////////
@@ -71,65 +103,97 @@ header {
     background: url("../assets/images/mountains.jpg") no-repeat center;
     background-size: 100%;
     padding: 100px 0;
+    text-align: center;
 }
 
 .headercontent {
     margin: 50px auto;
-    width: 800px;
+    width: 1000px;
     position: relative;
-    top: -100px;
+    top: -120px;
 }
 
 .headerform {
-    text-align: center;
     margin: 20px;
 }
 
 .headerform input {
     position: relative;
     left: 3px;
-    background-color: transparent;
-    font-size: 12px;
-    padding: 10px;
-    border: 2px solid #1C2B32;
-    border-top-left-radius: 19px;
-    border-bottom-left-radius: 19px;
-    outline: none;
-}
-
-.headerform input::placeholder {
-    color: #1C2B32;
-    font-size: 12px;
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
 }
 
 .headerform button {
     position: relative;
     right: 3px;
-    background-color: #1C2B32;
-    color: #FFF;
-    font-size: 12px;
-    padding: 10px;
-    border: 2px solid #1C2B32;
-    border-top-right-radius: 19px;
-    border-bottom-right-radius: 19px;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
 }
 
+/*//////////////////////MAIN /////////////////////*/
+
+main {
+    margin: 50px auto;
+    width: 1000px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
 
+.testimonial blockquote {
+    border: 1px solid #1C2B32;
+    width: 100%;
+}
+
+.testimonial blockquote > img {
+    display: inline-block;
+    width: 20px;
+}
+
+.testimonial blockquote p {
+    display: inline-block;
+    width: 90%;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.support img {
+    width: 100%;
+    border-radius: 10px;
+}
 
+.support p {
+    margin: 20px 0;
+}
+
+.support button {
+    border-radius: 33px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq details {
+    padding: 10px;
+}
+
+.faq p {
+    color: #FFF;
+    background-color: #899CA0;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+}
+
+.faq summary:hover {
+    cursor: pointer;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
 .pagefooter {
+    text-align: center;
+    padding: 30px 0;
     color: #FFF;
     background-color: #1C2B32;
-    text-align: center;
 }
