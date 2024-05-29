@@ -43,6 +43,7 @@ button, input {
     font-size: 14px;
     padding: 20px;
     border: 2px solid #1C2B32;
+    outline: none;
 }
 
 button {
@@ -53,7 +54,6 @@ button {
 input {
     background-color: transparent;
     color: #1C2B32;
-    outline: none;
 }
 
 input::placeholder {
@@ -68,8 +68,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -82,7 +80,7 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin: 30px;
 }
 
@@ -131,7 +129,7 @@ header {
     border-bottom-right-radius: 33px;
 }
 
-/*//////////////////////MAIN /////////////////////*/
+/*////////////////////// MAIN /////////////////////*/
 
 main {
     margin: 50px auto;
@@ -140,20 +138,37 @@ main {
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.testimonial div {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px hsla(0, 0%, 70%, 0.8);
+    padding: 30px;
+    margin: 50px 0;
+}
+
+.quote, .testimonial p, .testimonial footer, .customerimg {
+    margin: 10px;
+}
+
+.quote {
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+    height: 30px;
+}
 
 .testimonial blockquote {
-    border: 1px solid #1C2B32;
-    width: 100%;
-}
-
-.testimonial blockquote > img {
-    display: inline-block;
-    width: 20px;
-}
-
-.testimonial blockquote p {
     display: inline-block;
     width: 90%;
+}
+
+.customerimg {
+    width: 40px;
+}
+
+.testimonial cite {
+    position: relative;
+    bottom: 25px;
 }
 
 /*///////////// 3.3 Support /////////////*/
@@ -196,4 +211,5 @@ main {
     padding: 30px 0;
     color: #FFF;
     background-color: #1C2B32;
+    font-size: 12px;
 }
